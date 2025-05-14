@@ -1,5 +1,6 @@
 ### SYNCHRONOUS-UP-COUNTER
-
+# NAME : KABIRA A
+# REGISTER NUMBER : 212224040146
 **AIM:**
 
 To implement 4 bit synchronous up counter and validate functionality.
@@ -33,14 +34,33 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 **PROGRAM**
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+```
+module ex11(out,clk,rst);
+input clk,rst;
+output reg [3:0]out;
+always @ (posedge clk)
+begin
+   if(rst)
+     out<=0;
+   else 
+     out <= out+1;
+end
+endmodule
 
-Developed by: RegisterNumber:
+```
 */
 
 **RTL LOGIC UP COUNTER**
 
+![11l](https://github.com/user-attachments/assets/11411e34-fab4-45df-824d-fa9939ace4f8)
+
 **TIMING DIAGRAM FOR IP COUNTER**
+
+![11w](https://github.com/user-attachments/assets/c015e81f-d665-42e2-9510-741a80efc87f)
 
 **TRUTH TABLE**
 
+![t11](https://github.com/user-attachments/assets/2aff1d6d-0ae4-4bea-a615-84ac7d2adc37)
+
 **RESULTS**
+Thus the program executed successfully.
